@@ -31,3 +31,8 @@ create a self-signed server crt:
 ```
 openssl x509 -req -days 3650 -in server.csr -signkey server.key -out server.crt
 ```
+
+## Run aioRTC server application ##
+```
+python server.py --cert-file ./server.crt --key-file ./server.key --host {IP.ADDRESS}
+```
